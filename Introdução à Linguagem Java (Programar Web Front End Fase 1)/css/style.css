@@ -1,0 +1,44 @@
+li {
+    list-style:none /* esconder numeração da lista */
+}
+
+nav {
+    position: fixed;
+    background-color: white;
+    border-radius: 1px;
+    margin-top: -8px; /* Subir mais a barra de navegação */
+
+}
+
+.nav a {
+    margin-right: 10px; 
+    text-decoration: none;
+    
+}
+
+.logo-unifacisa {
+    margin-top: 45px;
+}
+
+/* Font */
+h1, h2 {font-family: 'Oswald', sans-serif;}
+
+p {font-family: "Segoe UI", Segoe, Tahoma, Geneva, Verdana, sans-serif;}
+
+@media (max-width: 800px) {
+    
+/* Vídeo responsivo */
+.video-responsivo {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Proporção de aspecto 16:9 (altura/largura) */
+}
+
+.video-responsivo iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+}

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta content='Introdução à Linguagem Java' name='description'>
+      <meta name="keywords" content="Java, Linguagem java, programação, aprender programação, aula">
+      <meta property="og:image" content="img/og.png">
+      <link rel="icon" type="image/x-icon" href="icon/icon-java.ico">
+      <link rel="stylesheet" href="css/style.css">
+      <link href='https://fonts.googleapis.com/css?family=Oswald:500,700' rel='stylesheet'>
+      
+      <title>Introdução à Linguagem Java</title>
+   </head>
+   <body>
+
+      <!-- Cabeçalho da página -->
+      <header>
+         <!-- Barra de navegação -->
+         <div class="nav">
+            <nav>
+               <!-- Links para seções da página -->
+               <a href="#inicio">Início</a>
+               <a href="#helloworld">Hello World</a>
+               <a href="#variaveis">Variáveis</a>
+               <a href="#entrada-de-dados">Entrada de Dados</a>
+               <a href="#condicionais">Condicionais</a>
+               <a href="#for-while">Estruturas de Repetição</a>
+               <a href="#getters-setters">Getters e Setters</a>
+               <a href="#construtor">Construtor</a>
+               <a href="#classes">Classes e Objetos</a>
+               <a href="#arrays">Arrays</a>
+            </nav>
+         </div>
+         <!-- Introdução -->
+         <div id="inicio" align="center">
+            <br>
+            <h1 id="hello-world">Introdução à Linguagem Java</h1>
+            <br>
+         </div>
+         <!-- Logo Java -->
+         <div align="center" id="java-logo">
+            <img src="img/java-logo.png" alt="logo java" width="252px" height="159px">
+            <hr>
+         </div>
+      </header>
+      <!-- Fim do cabeçalho -->
+
+      <!-- Seção Hello World -->
+      <section id="helloworld">
+         <div align="center" class="helloworld">
+            <h2>Saída de Dados (Hello World)</h2>
+            <!-- Áudio -->
+            <audio controls>
+               <source src="audio/hello_world.mp3" type="audio/mp3">
+            </audio>
+            <p>Podemos usar algumas funções prontas da biblioteca do <b>Java</b> para imprimirmos algo na tela, ou seja,
+               passar ao usuário algum texto, <br>dessa forma utilizamos as funções pertencentes à biblioteca
+               <b>System</b>.
+            </p>
+            <p>Utilizamos o método para imprimir e pular para a próxima linha.</p>
+            <!-- Imagem descrevendo o código -->
+            <div>
+               <img src="img/hello-world.png" alt="hello world java" width="55%" height="55%">
+            </div>
+            <br>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção Variáveis -->
+      <section id="variaveis">
+         <div align="center" class="variaveis-e-tipos-primitivos">
+            <h2>Declaração de variáveis e tipos primitivos</h2>
+            <!-- Áudio -->
+            <audio controls>
+               <source src="audio/declaracao_variavel.mp3" type="audio/mp3">
+            </audio>
+            <p>Em Java, uma <b>variável</b> é um espaço de armazenamento nomeado que pode conter dados que podem ser
+               <br>modificados durante a execução do programa. As variáveis são fundamentais para armazenar e manipular
+               informações em um programa.
+            </p>
+            <p>Os tipos primitivos mais usados em Java são:</p>
+            <table width="70%" border="1" style="text-align: center;">
+               <tr>
+                  <th>int</th>
+                  <th>float</th>
+                  <th>double</th>
+                  <th>boolean</th>
+               </tr>
+               <tr>
+                  <td>tipo numérico inteiro</td>
+                  <td>tipo numérico contendo casas decimais</td>
+                  <td>tipo numérico contendo casas decimais</td>
+                  <td>verdadeiro ou falso</td>
+               </tr>
+            </table>
+            <p>Também usamos <b>"String"</b>, que muitas vezes parece ser tratada como tipo primitivo mais é na verdade
+               uma
+               classe que <br>encapsula a funcionalidade avançada necessária para manipulação eficiente de texto.
+            </p>
+            <p>Exemplos:</p>
+            <!-- Imagem descrevendo o código -->
+            <div>
+               <img src="img/variaveis-tipos.png" alt="Definição de variáveis" width="55%" height="55%">
+            </div>
+      
+            <h2>Tipos de dados primitivos</h2>
+            <!-- Vídeo demonstrativo -->
+            <div class="video-responsivo">
+               <iframe width="800" height="450" src="https://www.youtube.com/embed/fYXkqpbvvi8?si=3bEOe7P8oLu1dPS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <br>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção Scanner -->
+      <section id="entrada-de-dados">
+         <div align="center" class="scanner">
+            <h2>Entrada de Dados: Scanner</h2>
+            <!-- Áudio -->
+            <audio controls>
+               <source src="audio/scanner.mp3" type="audio/mp3">
+            </audio>
+            <p>O Scanner, é pertencente ao pacote java.util. A classe "Scanner" simplifica a leitura de diversas
+               formas de entrada do usuário. <br>
+               Seja a partir do teclado, arquivos ou outras fontes, o Scanner oferece uma interface eficiente para
+               capturar dados.
+            </p>
+            <p>É necessário criar um objeto do tipo <b>Scanner</b> que passa como argumento o objeto System.in dentro do
+               construtor, e logo após <br>
+               o término da sua utilização deve ser fechado, do seguinte modo:
+            </p>
+            <!-- Imagem descrevendo o código -->
+            <div>
+               <img src="img/scanner.png" alt="Scanner java" width="55%" height="55%">
+            </div>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção Condicionais -->
+      <section id="condicionais">
+         <div align="center" class="estruturas-condicionais">
+            <h2>Estruturas condicionais (if, else, switch)</h2>
+            <audio controls>
+               <source src="audio/if_else.mp3" type="audio/mp3">
+            </audio>
+            <h3>If / Else</h3>
+            <p>O if é usado para a execução de um bloco de código se uma determinada condição for verdadeira.
+               <br>O else permite especificar um bloco de código a ser executado se a condição do if for falsa. <br>
+               Isso permite que o programa tome decisões com base nas condições.
+            </p>
+            <p>Podemos criar um programa que verifica a idade de uma pessoa e retorna uma mensagem dizendo se <br>ela é
+               maior ou menor de idade. 
+            </p>
+            <p>Veja no exemplo abaixo:</p>
+            <div>
+               <img src="img/if-else.png" alt="Condicionais if else" width="55%" height="55%">
+            </div>
+            <br>
+            <h2>Switch</h2>
+            <audio controls>
+               <source src="audio/switch-case.mp3" type="audio/mp3">
+            </audio>
+            <p>O <b>switch</b> é utilizado com o objetivo de selecionar alguns dos blocos a serem executados. Trata-se de uma
+            sequência de <br> declarações, no qual o resultado/valores de uma expressão é comparado com os
+            resultados/valores de cada situação. <br>
+            Caso venha acontecer uma correspondência, o bloco de código é executado.
+            </p>
+            <p>Dentro de uma estrutura switch existe o <i>(case)</i>, que é usado para executar uma determinada função
+               escolhida pelo usuário.
+            </p>
+            <p>Resumindo o if, else, e switch são comandos essenciais para controlar o fluxo de execução do programa
+               com base em condições específicas.
+            </p>
+            <div>
+               <img src="img/switch-case.png" alt="Switch Case Java" width="55%" height="55%">
+            </div>
+            </p>
+            <h2>Resumindo</h2>
+            <table width="70%" border="1" style="text-align: center;">
+               <tr>
+                  <th>If</th>
+                  <th>Else</th>
+                  <th>Switch Case</th>
+               </tr>
+               <tr>
+                  <td>Executa um bloco de código se uma determinada condição for verdadeira</td>
+                  <td>Especifica um bloco de código a ser executado se a condição do if for falsa</td>
+                  <td>É usado para executar uma determinada função escolhida pelo usuário</td>
+               </tr>
+            </table>
+            <br>
+            <h2>Veja o vídeo abaixo sobre estruturas condicionais:</h2>
+
+            <!-- Vídeo demonstrativo -->
+            <div class="video-responsivo">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/BpbJnJAHcRA?si=XELzdmMFSkj8HbbD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção For e While -->
+      <section id="for-while">
+         <div align="center" class="estruturas-de-repeticao">
+            <h2>Estruturas de repetição (for e while)</h2>
+            <audio controls>
+               <source src="audio/for-while.mp3" type="audio/mp3">
+            </audio>
+            <p>Os laços de repetição, incluindo for, while e do-while, são usados para a execução de um bloco de
+               código<br> de forma repetida com base em alguma condição específica.
+            </p>
+            <p>O <b>for</b> é utilizado quando o número de iterações é conhecido muito antes de realizar o loop, ele é dividido
+               em
+               três partes: <br> inicialização, condição de continuação e expressão de incremento/decremento. O while
+               executa um bloco de código enquanto uma condição for verdadeira. 
+            </p>
+            <p>Veja no exemplo do vídeo abaixo:</p>
+
+            <!-- Vídeo demonstrativo -->
+            <div class="video-responsivo">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/9xTqj779eP0?si=jn9SCYaheadsQt2g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção Getters e Setters -->
+      <section id="getters-setters">
+         <div align="center" class="getters-and-setters">
+            <h2>Getters and Setters</h2>
+            <audio controls>
+               <source src="audio/guetters-setters.mp3" type="audio/mp3">
+            </audio>
+            <p>Os métodos getters e setters são usados para acessar e modificar os atributos (variáveis de instância) de
+               uma classe<br>
+               de maneira controlada.
+            </p>
+            <p>Os métodos <strong>getters</strong> são usados para obter o valor de um atributo de uma classe. Já os métodos <strong>setters</strong><br>
+               são usados para definir o valor de um atributo de uma classe.
+            </p>
+            <div>
+               <img src="img/getters-setters.png" alt="Exemplo getters e setters" width="55%" height="55%">
+            </div>
+            <h2>POO Java - Modificadores de Acesso + Métodos Getters e Setters</h2>
+
+            <!-- Vídeo demonstrativo -->
+            <div class="video-responsivo">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/_5iyl5lcoJY?si=bEATuwa3YRnC5-X7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção Construtor -->
+      <section id="construtor">
+         <div align="center" class="constructors">
+            <h2>Construtor</h2>
+            <audio controls>
+               <source src="audio/construtor.mp3" type="audio/mp3">
+            </audio>
+            <p>Métodos construtores são métodos executados automaticamente toda vez que uma instância da classe é
+               criada.
+               <br>O construtor é normalmente utilizado para fornecer valores iniciais para variáveis de instâncias
+               definidas pela classe, <br>
+               quando instanciada no método <b>Main</b> essa classe deve receber nos parâmetros os valores que estão
+               nos construtores.
+            </p>
+            <div>
+               <img src="img/construtor.png" alt="Exemplo construtor java" width="55%" height="55%">
+            </div>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção Classes e Objetos -->
+      <section id="classes">
+         <div align="center" class="classes-objetos">
+            <h2>Classes Objetos e Métodos</h2>
+            <audio controls>
+               <source src="audio/classes.mp3" type="audio/mp3">
+            </audio>
+            <p>Uma classe é a estrutura fundamental que define um tipo de objeto. Ela é um modelo para criar objetos.
+               Uma classe <br>
+               geralmente contém atributos (variáveis de instância) e métodos
+               (funções) que operam<br>
+               sobre esses atributos. 
+            </p>
+            <p>
+               Por exemplo:
+            </p>
+            <div>
+               <img src="img/classes.png" alt="Classes em java" width="55%" height="55%">
+            </div>
+            <h2>Objetos</h2>
+            <audio controls>
+               <source src="audio/objetos.mp3" type="audio/mp3">
+            </audio>
+            <p>Um objeto, por outro lado, é uma instância específica de uma classe. Usamos a palavra-chave <b>new</b>
+               para
+               criar objetos.<br>
+               Veja este exemplo onde criamos um objeto para esta classe, e damos valores aos seus atributos:
+            </p>
+            <div>
+               <img src="img/objeto.png" alt="Objeto de uma classe em java" width="55%" height="55%">
+            </div>
+            <h2>Poo - Java (Classes, Objetos, Atributos e Métodos)</h2>
+
+            <!-- Vídeo demonstrativo -->
+            <div class="video-responsivo">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/ohmHbdUhAGc?si=I14tL22MI13a4VHo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Seção Arrays/ArrayList -->
+      <section id="arrays">
+         <div align="center" class="classes-objetos">
+            <h2>Arrays</h2>
+            <audio controls>
+               <source src="audio/arrays.mp3" type="audio/mp3">
+            </audio>
+            <p>Um Array geralmente é formado para exibir uma lista de elementos do mesmo tipo. Eles tem tamanho fixo.
+               <br>Arrays podem ser de tipos primitivos ou de instâncias de uma classe.
+            </p>
+            <p> Veja abaixo como deve ser feita a inicialização de um array do tipo int com 5 itens:</p>
+            <p><b>int[] num = new int[5];</b></p>
+            <div>
+               <img src="img/arrays.png" alt="Exemplo de Array" width="55%" height="55%">
+            </div>
+            <p>Arrays também podem conter elementos instanciados de uma classe</p>
+            <audio controls>
+               <source src="audio/arrays2.mp3" type="audio/mp3">
+            </audio>
+            <div>
+               <img src="img/arrays-instancia.png" alt="Exemplo de Array 2" width="55%" height="55%">
+            </div>
+            <h2>ArrayList</h2>
+            <audio controls>
+               <source src="audio/arraylist.mp3" type="audio/mp3">
+            </audio>
+            <p>ArrayList é uma classe pertencente ao pacote java.util que implementa a interface List. Ele fornece uma
+               estrutura <br>
+               de dados dinâmica que pode armazenar elementos de qualquer tipo, como objetos de uma classe ou tipos
+               primitivos.
+            </p>
+            <p> Diferentemente de Arrays, o "ArrayList" é dinâmico, ou seja, o seu tamanho pode ser alterado durante a
+               execução do código.<br>
+               Isso é interessante você pode não saber quantos elementos irá armazenar antecipadamente.
+            </p>
+            <p>O ArrayList oferece métodos próprios para funções como:</p>
+            <ul>
+               <!-- Lista não ordenada -->
+               <li>Adicionar elementos <b>(.add)</b></li>
+               <li>Remover <b>(.remove)</b></li>
+               <li>Acessar elementos <b>(.get)</b></li>
+               <li>Verificar existência <b>(.contains)</b></li>
+               <li>Obter índice <b>(.indexOf)</b></li>
+               <li>Verificar tamanho <b>(.size)</b></li>
+            </ul>
+            <p>
+               Veja este exemplo abaixo, usando a mesma idéia anterior de Arrays, só que desta vez com "ArrayList",
+               <br>
+               criamos um ArrayList para armazenar dados da classe <b>"Livro"</b>:
+            </p>
+            <div>
+               <img src="img/arraylist.png" alt="Arraylist exemplo java" width="55%" height="55%">
+            </div>
+            <h2>Métodos do Arraylist</h2>
+            <!-- Vídeo demonstrativo -->
+            <div class="video-responsivo">
+            <iframe width="800" height="450" src="https://www.youtube.com/embed/c0nEVgU7G_w?si=vBCkE4d4bQefcVFp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <hr>
+         </div>
+      </section>
+
+      <!-- Formulário -->
+      <section class='contact'>
+         <div align="center">
+            <h2>
+               Tem alguma dúvida?
+            </h2>
+            <div style="width: 80%; margin: 0 auto;">
+               <h3>
+                  Envie-nos sua mensagem
+               </h3>
+               <form action='email.php' method="post" style="width: 80%; margin: 0 auto;">
+                  <div class='name-form'>
+                    Nome: <input class='form-control' name='name' placeholder='Nome Completo' type='text' style="width: 258px" required><br>
+                  </div>
+                  <div class='email-form'>
+                     E-mail: <input class='form-control' name='email' placeholder='E-mail' type='email' style="width: 254px" required><br>
+                  </div>
+                  <div class='mensagem-form'>
+                     <textarea class='form-control' name='message' placeholder='Mensagem' type='text' style="width: 308px; height: 103px" required></textarea>
+                  </div>
+                  <input type="submit" value="Enviar" />
+               </form>
+            </div>
+         </div>
+         </div>
+         </div>
+         <hr>
+      </section>
+      
+      <!-- Footer -->
+      <footer>
+         <div class="footer">
+            <div>
+               <!-- Logomarca -->
+               <div align="center" class="logo-unifacisa">
+                  <img src="img/unifacisa-2.png" alt="Logomarca" width="17%" height="17%">
+               </div>
+               <br>
+               <!-- Grupo -->
+               <div class="texto-footer" align="center">
+                  <h2>Programar Web Front End</h2>
+                  <h4>Grupo:</h4>
+                  <h4>Diogo Diniz Spínola Ribeiro / Keven Max Bezerra de Sousa / Riquelme Alves Trajano / Thiago
+                     Ribeiro Ramos
+                     Silva
+                  </h4>
+                  <br>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
